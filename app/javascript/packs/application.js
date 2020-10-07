@@ -4,7 +4,11 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-require("turbolinks").start()
+// require("turbolinks").start()
+// turbolinks
+// ページ間を遷移する際に、画面表示を早くする機能があります。
+// Railsに標準で導入されているGemのひとつです。
+// 上記のように、turbolinksによって画面表示の速度は向上しますが、次ページのHTML要素だけを読み取って表示するため、JavaScriptファイルが読み込まれず、JavaScriptにて設定したイベントが発火しないケースもあります。
 require("@rails/activestorage").start()
 require("channels")
 
